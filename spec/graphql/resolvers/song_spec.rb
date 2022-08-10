@@ -10,6 +10,7 @@ RSpec.describe Resolvers::Song do
       query Song($id: ID)  {
         song(id: $id) {
           id
+          albumId
           name
           sort
           duration
